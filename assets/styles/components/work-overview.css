@@ -1,2 +1,63 @@
-/* Work Overview
+/* Work Overview Grid
 ############################################################################ */
+.work-overview {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 1rem 0;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  /* Work Overview Item */
+  .work-overview-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background-color: #fafafa;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .work-overview-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Titel */
+  .work-overview-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  /* Link im Titel */
+  .work-overview-item h3 a {
+    color: var(--color-green);
+    text-decoration: none;
+  }
+
+  .work-overview-item h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Mobile Optimierung */
+  @media (width <= 600px) {
+    .work-overview-item {
+      padding: 0.75rem 1rem;
+      gap: 0.4rem;
+    }
+  
+    .work-overview-item h3 {
+      font-size: 1rem;
+    }
+  
+    .work-overview-item .meta,
+    .work-overview-item .abstract {
+      font-size: 0.85rem;
+    }
+  }
+  

@@ -3,3 +3,55 @@
 
 /* Form
 ############################################################################ */
+
+/* Container für das Formular */
+form.form-example {
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    font-family: Arial, sans-serif;
+    gap: 20px;
+  }
+  
+  /* Textabschnitt */
+  form.form-example p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Einzelfelder im Formular */
+  .form-example label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-dark);
+    font-weight: bold;
+  }
+  
+  .form-example input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Button */
+  .form-example input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-pink);
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-example input[type="submit"]:hover {
+    background-color: var(--color-dark);
+  }
+  
